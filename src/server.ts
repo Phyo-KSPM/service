@@ -9,6 +9,7 @@ const port = process.env.PORT || 3000;
 app.get('/api/v1/users', (req:Request, res:Response) => {
     return res.status(200).json({
         status: 'success',
+        message: 'Users fetched successfully',
         data: {
             users: [
                 {
